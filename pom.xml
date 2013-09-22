@@ -1,6 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+      <groupId>ru.megafon.datalabs</groupId>
+      <artifactId>superpom-hadoop</artifactId>
+      <version>1.0.0</version>
+  </parent>
+
   <groupId>com.tomslabs</groupId>
   <artifactId>avro-utils</artifactId>
   <version>1.6.2-SNAPSHOT</version>
@@ -39,24 +46,28 @@
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-core</artifactId>
-      <version>0.20.2-cdh3u1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-streaming</artifactId>
-      <version>0.20.2-cdh3u1</version>
+      <version>${hadoop.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
-      <version>1.5.1</version>
+      <version>1.7.4</version>
     </dependency>
     <dependency>
        <groupId>org.apache.avro</groupId>
        <artifactId>avro-mapred</artifactId>
-       <version>1.5.1</version>
+       <version>1.7.4</version>
      </dependency>
      <dependency>
       <groupId>junit</groupId>

@@ -11,3 +11,5 @@ thirdparty
 logs
 .classpath
 .project
+.idea
+*.iml
