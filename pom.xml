@@ -10,7 +10,7 @@
 
   <groupId>com.tomslabs</groupId>
   <artifactId>avro-utils</artifactId>
-  <version>1.6.2-SNAPSHOT</version>
+  <version>1.6.2</version>
   <packaging>jar</packaging>
   <name>Avro Utils</name>
   <description>Utilities to use Avro files from Hadoop Map/Reduce jobs and Streaming</description>
