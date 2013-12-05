@@ -5,12 +5,12 @@
   <parent>
       <groupId>ru.megafon.datalabs</groupId>
       <artifactId>private-superpom-hadoop</artifactId>
-      <version>1.0.3-SNAPSHOT</version>
+      <version>1.0.3</version>
   </parent>
 
   <groupId>com.tomslabs</groupId>
   <artifactId>avro-utils</artifactId>
-  <version>1.6.3</version>
+  <version>1.6.4</version>
   <packaging>jar</packaging>
   <name>Avro Utils</name>
   <description>Utilities to use Avro files from Hadoop Map/Reduce jobs and Streaming</description>
